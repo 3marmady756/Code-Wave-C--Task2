@@ -1,0 +1,57 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        string input = "123abc";
+        try
+        {
+            int result = int.Parse(input);
+            Console.WriteLine($"Converted number: {result}");
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Error: The string contains non-numeric characters and cannot be converted to an integer.");
+        }
+    }
+}
+
+using System;
+
+class SubstringExample
+{
+    static void Main(string[] args)
+    {
+        string input = "Hello, World!";
+        int startIndex = 7;
+        int length = 5;
+        string substring = input.Substring(startIndex, length);
+        Console.WriteLine($"Extracted substring: {substring}");
+    }
+}
+
+using System;
+
+class CombineStrings
+{
+    static void Main(string[] args)
+    {
+        string string1 = "Hello";
+        string string2 = "World";
+        string combined = string1 + " " + string2;
+        Console.WriteLine($"Combined string: {combined}");
+    }
+}
+
+using System;
+
+class TemperatureCheck
+{
+    static void Main(string[] args)
+    {
+        int temperature = 25;
+        string result = temperature < 10 ? "Just Cold" : (temperature > 30 ? "Just Hot" : "Just Good");
+        Console.WriteLine($"The temperature is: {result}");
+    }
+}
